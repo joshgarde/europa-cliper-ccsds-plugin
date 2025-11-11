@@ -29,13 +29,13 @@ You might need to upgrade pip first:
 
     pip install --upgrade pip
 
-Install the package in editable mode:
+Install the package in editable mode, with the developer dependencies:
 
-    pip install -e .
+    pip install -e '.[dev]'
 
 Make your changes in the package definition files located in the `ccsds.packets.europa_clipper` directory.
 
-Update the test reference data as needed in `ccsds.packets.europa_clipper.test`.
+Create/Update the test reference data as needed, next to the updated packet definitions, for example `ccsds.packets.europa_clipper.ecm.test`.
 
 Run the tests to ensure everything is working:
 

@@ -12,7 +12,7 @@ dependencies = [
     "tqdm~=4.66.1",
     "pandas~=2.3.3",
     #"spac-kit~=1.0.0",
-    "spac-kit @ https://github.com/CCSDSPy/SPaC-Kit.git",
+    "spac-kit @ git+https://github.com/CCSDSPy/SPaC-Kit.git@main",
     "sphinx-autobuild~=2025.8.25"
 ]
 

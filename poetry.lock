@@ -2198,10 +2198,8 @@ description = "Collection of Python tools for working with CCSDS Space Packets"
 optional = false
 python-versions = ">=3.12"
 groups = ["main"]
-files = [
-    {file = "spac_kit-1.0.0-py3-none-any.whl", hash = "sha256:49c4b4dd09fd1ca3605331c2be599c462ae5085eec4742a07d1314cd2c24cedd"},
-    {file = "spac_kit-1.0.0.tar.gz", hash = "sha256:3712cad9ab9cca9592a6d52083aa1e1dec7410a2bf450118866012219e7dc24d"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 bitstring = ">=4.3.1,<4.4.0"
@@ -2213,6 +2211,12 @@ scipy = ">=1.11.0"
 setuptools = ">=67.8.0,<67.9.0"
 sphinx = ">=9.1.0,<10.0.0"
 tqdm = ">=4.66.1,<4.68.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/CCSDSPy/SPaC-Kit.git"
+reference = "main"
+resolved_reference = "5ab6feb7d85b5786a0410d2d6ca30c4f2103573c"
 
 [[package]]
 name = "sphinx"
@@ -2934,4 +2938,4 @@ dev = ["bitstring", "flake8", "poetry", "pylint", "pytest", "sphinx_rtd_theme"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<4.0"
-content-hash = "4dc34039a94f3bcb92b97a8d291c96a534bc02c212f9e89fb61aa9d599ade179"
+content-hash = "ad466b770137e6b8879abb9843488a1be39a5ba2141917fc234f05ca28244917"

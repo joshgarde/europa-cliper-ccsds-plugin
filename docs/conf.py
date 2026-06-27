@@ -19,6 +19,9 @@ html_theme_options = {
     'collapse_navigation': False,  # Keep sidebar expanded
 }
 
+# Path to static files (CSS, images, etc.)
+html_static_path = ['_static']
+
 # List of modules to scan for _BasePacket instances for stub generation
 spacdocs_packet_modules = [
     'ccsds.packets.europa_clipper.e_themis',

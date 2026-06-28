@@ -28,6 +28,8 @@ jobs:
       }}
     steps:
       - uses: actions/checkout@v4
+      - name: Install Git
+        run: apt-get update && apt-get install -y git
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
@@ -76,6 +78,8 @@ jobs:
                 artifact_id: artifact.id
               });
             }
+      - name: Install Git
+        run: apt-get update && apt-get install -y git
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
